@@ -1,0 +1,86 @@
+/* Custom CSS for GASSO */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+nav {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #1E40AF; /* Tailwind's blue-800 */
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(to right, #2563EB, #1E40AF); /* Tailwind's blue gradient */
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+header a:hover {
+    background-color: #E5E7EB; /* Tailwind's gray-200 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+#features {
+    padding: 2rem 0;
+}
+#features h2 {
+    color: #1E3A8A; /* Tailwind's blue-900 */
+}
+#features .shadow {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#features .shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+#about {
+    padding: 2rem 0;
+    line-height: 1.8;
+    color: #4B5563; /* Tailwind's gray-600 */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem 0;
+}
+#contact form {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#contact input, #contact textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+#contact input:focus, #contact textarea:focus {
+    border-color: #2563EB; /* Tailwind's blue-600 */
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.5);
+}
+#contact button {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+#contact button:hover {
+    background-color: #1E40AF; /* Tailwind's blue-800 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #1F2937; /* Tailwind's gray-800 */
+    color: #F9FAFB; /* Tailwind's gray-50 */
+    padding: 1rem;
+    font-size: 0.875rem;
+}

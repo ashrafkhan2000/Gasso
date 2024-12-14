@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GASSO - Find the Best Gas for Your Vehicle</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a class="text-2xl font-bold text-blue-600" href="#">GASSO</a>
+            <button class="block lg:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <ul class="hidden lg:flex space-x-6">
+                <li><a class="text-gray-600 hover:text-blue-600" href="#features">Features</a></li>
+                <li><a class="text-gray-600 hover:text-blue-600" href="#about">About</a></li>
+                <li><a class="text-gray-600 hover:text-blue-600" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <header class="bg-blue-600 text-white text-center py-20">
+        <h1 class="text-4xl font-bold">Welcome to GASSO</h1>
+        <p class="mt-4">Find the Best Gas Stations for Your Vehicle with Ease</p>
+        <a href="#features" class="mt-6 inline-block bg-white text-blue-600 font-bold py-2 px-4 rounded shadow hover:bg-gray-100">Learn More</a>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow rounded p-6">
+                <h4 class="text-xl font-bold mb-4">User Authentication</h4>
+                <div class="space-y-2">
+                    <a href="Login.html" class="block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">Log In</a>
+                    <a href="signup.html" class="block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">Sign Up</a>
+                    <a href="forget.html" class="block bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">Forget Password</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow rounded p-6">
+                <h4 class="text-xl font-bold mb-4">Gas Station Finder</h4>
+                <iframe class="w-full h-64 rounded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=gas%20station+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+
+            <div class="bg-white shadow rounded p-6">
+                <h4 class="text-xl font-bold mb-4">Subscription Management</h4>
+                <p>Easy subscription management with monthly billing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+        <p class="text-center">GASSO aims to make it easy for users to locate gas stations, check gas pressure, and navigate with ease. Designed to save time and offer a smooth experience.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto my-10 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <form class="max-w-lg mx-auto bg-white shadow rounded p-6">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" id="name" class="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" id="email" class="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea id="message" rows="4" class="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded shadow hover:bg-blue-700">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 GASSO. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
